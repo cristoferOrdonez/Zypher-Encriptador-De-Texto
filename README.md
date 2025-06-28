@@ -106,12 +106,6 @@ Para consultas, sugerencias o colaboración, contáctame por correo o a través 
 
 ---
 
-## 📝 Licencia
-
-Este proyecto está bajo la licencia [MIT](LICENSE) (opcional, agrega si corresponde).
-
----
-
 ### Referencias
 
 Basado en la lógica y estructura de proyectos similares de Alura Oracle ONE.
