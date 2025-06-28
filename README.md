@@ -1,57 +1,117 @@
-# 🔐 Zypher - Encriptador de Texto
+# Zypher – Encriptador de Texto 🛡️
 
-Zypher es una aplicación web sencilla e intuitiva para encriptar y desencriptar mensajes de texto usando un algoritmo personalizado de sustitución de caracteres. Ideal para usuarios que desean mantener sus mensajes protegidos de forma rápida y sin complicaciones técnicas.
-
----
-
-## 📑 Tabla de Contenido
-
-- [📌 Acerca del Proyecto](#-acerca-del-proyecto)
-- [🚀 Funcionalidades](#-funcionalidades)
-- [🧠 Lógica de Encriptación](#-lógica-de-encriptación)
-- [🛠️ Tecnologías Usadas](#-tecnologías-usadas)
-- [🎮 Cómo Usar la Aplicación](#-cómo-usar-la-aplicación)
-- [📸 Capturas de Pantalla](#-capturas-de-pantalla)
-- [👨‍💻 Autores](#-autores)
-- [📚 Lecciones Aprendidas](#-lecciones-aprendidas)
+**Zypher** es una aplicación web sencilla para encriptar y desencriptar mensajes de texto mediante un algoritmo de sustitución de vocales. Fue desarrollado como parte de un desafío del programa Oracle Next Education (ONE) de Alura LATAM.
 
 ---
 
-## 📌 Acerca del Proyecto
+## 🔐 Funcionamiento
 
-Zypher nació como un proyecto web interactivo que permite transformar textos simples en cadenas aparentemente ilegibles, utilizando un algoritmo de sustitución simple con desplazamiento circular. Su objetivo principal es brindar una experiencia de cifrado didáctica, demostrando los conceptos básicos detrás de la criptografía por sustitución.
+Las vocales en el texto se reemplazan por las siguientes secuencias específicas, y también se puede revertir el proceso (desencriptar):
 
----
+| Vocal | Encriptación |
+|:-----:|:------------:|
+| a     | ai           |
+| e     | enter        |
+| i     | imes         |
+| o     | ober         |
+| u     | ufat         |
 
-## 🚀 Funcionalidades
+**Ejemplos:**
 
-✅ Encriptar texto plano con un algoritmo propio  
-✅ Desencriptar texto previamente encriptado  
-✅ Interfaz intuitiva y responsive  
-✅ Copiar el resultado fácilmente al portapapeles  
-✅ Borrar los campos con un solo clic
+- Encriptar:  
+  `"gato"` → `"gaitober"`
 
----
-
-## 🧠 Lógica de Encriptación
-
-El sistema implementa una lógica de sustitución personalizada. Cada letra del texto original es reemplazada por un carácter desplazado o modificado. Esta lógica es reversible, permitiendo el proceso inverso para recuperar el mensaje original.
-
-> ⚠️ Nota: Este método no es seguro para protección real de datos sensibles, ya que no utiliza cifrado estándar como AES o RSA. Está orientado a fines educativos y demostrativos.
+- Desencriptar:  
+  `"gaitober"` → `"gato"`
 
 ---
 
-## 🛠️ Tecnologías Usadas
+## ✅ Requisitos
 
-- **HTML5** – Estructura de la aplicación
-- **CSS3** – Estilos personalizados y responsividad
-- **JavaScript (Vanilla)** – Lógica de encriptación y manipulación del DOM
+- Solo se permiten **letras minúsculas sin acentos ni caracteres especiales**.
+- El sistema debe permitir tanto encriptar como desencriptar textos.
+- El resultado debe mostrarse al usuario de forma clara.
 
 ---
 
-## 🎮 Cómo Usar la Aplicación
+## ⚙️ Características
 
-1. Clona el repositorio:
+- Entrada de texto mediante campo `<textarea>` o `<input>`.
+- Botón para encriptar el texto.
+- Botón para desencriptar el texto.
+- Área de salida para el resultado.
+- Botón “Copiar” para copiar el texto al portapapeles.
+- Diseño responsive y estilo adaptativo (modo claro/oscuro opcional).
 
-   ```bash
-   git clone https://github.com/cristoferOrdonez/Zypher-Encriptador-De-Texto.git
+---
+
+## 🧱 Tecnologías
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+---
+
+## 🛠️ Instalación y uso
+
+1. Clona o descarga el repositorio.
+2. Abre `index.html` en tu navegador web.
+3. Escribe tu mensaje, elige encriptar o desencriptar, y visualiza el resultado.
+4. Usa el botón de copiar para copiar el resultado al portapapeles.
+
+---
+
+## 🌐 Demo en vivo
+
+Disponible en GitHub Pages:  
+`https://tususuario.github.io/Zypher-Encriptador-De-Texto/` (ajusta según tu usuario)
+
+---
+
+## 📝 Estructura del proyecto
+
+```
+├── index.html
+├── style.css
+├── scripts.js
+├── README.md
+└── assets/
+    └── (imágenes, íconos, etc.)
+```
+
+---
+
+## 📋 Roadmap / Próximas mejoras
+
+- Modo oscuro con persistencia en `localStorage`.
+- Validación avanzada de entrada de texto.
+- Notificaciones al usuario (alertas o banners).
+- Copy-to-clipboard con confirmación visual.
+- Internacionalización o soporte multilenguaje.
+
+---
+
+## 👤 Autor
+
+**Cristofer Ordóñez**  
+Desarrollador frontend — Integrante de Oracle One.  
+✉️ [Tu correo electrónico]
+
+---
+
+## 📬 Contacto
+
+Para consultas, sugerencias o colaboración, contáctame por correo o a través de redes sociales.
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE) (opcional, agrega si corresponde).
+
+---
+
+### Referencias
+
+Basado en la lógica y estructura de proyectos similares de Alura Oracle ONE.
