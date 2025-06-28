@@ -96,7 +96,7 @@ Disponible en GitHub Pages:
 
 **Cristofer Ordóñez**  
 Desarrollador frontend — Integrante de Oracle One.  
-✉️ [Tu correo electrónico]
+✉️ cristodamian24@gmail.com
 
 ---
 
