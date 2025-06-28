@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --primary-color: #F3F5FC;
+    --secundary-color: #0A3871;
+    --tertiary-color: #D8DFE8;
+    --quaternary-color: white;
+    --color-sombra: rgb(230, 230, 230);
+
+    
+    --main-family-font: 'Inter', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+
+    background-color: var(--primary-color);
+}
+
+.secion_text_to_work{
+    width: 69.444%;
+}
+
+.header{
+    display: flex;
+}
+
+.header__image{
+    margin: 3.33% 0% 6.66% 3.33%;
+    width: 10%;
+}
+
+.main{
+    margin: 0% 8% 0% 24%;
+    width: 68%;
+}
+
+.main__text_area{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50vh;
+    resize: none;
+    font-family: var(--main-family-font);
+    font-size: 2rem;
+    color: var(--secundary-color);
+    background-color: var(--primary-color);
+}
+
+.main__text_area::placeholder{
+    color: var(--secundary-color);
+}
+
+.main__div_indicacion{
+    display: flex;
+    gap: 0.8%;
+    align-items: center;
+    font-family: var(--main-family-font);
+    font-size: 0.75rem;
+    color: gray;
+    margin: 13px 0px;
+}
+
+.icono_circulo_alerta{
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.main__div_botones{
+    display: flex;
+    gap: 2.4%;
+    margin-bottom: 13px;
+}
+
+.boton_encriptar{
+    width: 48.8%;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--secundary-color);
+    color: var(--quaternary-color);
+    font-family: var(--main-family-font);
+    font-size: 1rem;
+    padding: 20px 20px;
+}
+
+:hover.boton_encriptar{
+    background-color: #0a2e5a;
+}
+
+.boton_desencriptar{
+    width: 48.8%;
+    border: solid;
+    border-radius: 24px;
+    border-color: var(--secundary-color);
+    color: var(--secundary-color);
+    font-family: var(--main-family-font);
+    font-size: 1rem;
+    padding: 20px 20px;
+    background-color: var(--primary-color);
+}
+
+:hover.boton_desencriptar{
+    background-color: var(--tertiary-color);
+}
+
+.section_texto_resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 32px;
+    box-shadow: 0px 20px 15px -7px var(--color-sombra);
+    margin-top: 2.77%;
+    margin-right: 2.77%;
+    margin-bottom: 2.77%;
+    width: 27.7782%;
+    height: 88vh;
+    background-color: var(--quaternary-color);
+    font-family: var(--main-family-font);
+    text-align: center;
+}
+
+.texto_no_encontrado{
+    display: flex;
+    gap: 18px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_texto_resultado__imagen{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.section_texto_resultado__div_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.section_texto_resultado__div_texto__titulo{
+    font-size: 1.5rem;
+    color: #343A40;
+}
+
+.section_texto_resultado__div_texto__descripcion{
+    border: none;
+    outline: none;
+    font-family: var(--main-family-font);
+    font-size: 1rem;
+    color: #57494d;
+    height: 100%;
+    resize: none;
+    text-align: center;
+}
+
+.boton_copiar{
+    border: solid;
+    border-radius: 24px;
+    border-color: var(--secundary-color);
+    color: var(--secundary-color);
+    font-family: var(--main-family-font);
+    font-size: 1rem;
+    height: 0px;
+    visibility: hidden;
+    background-color: var(--quaternary-color);
+}
+
+:hover.boton_copiar{
+    background-color: var(--tertiary-color);
+}
+
+@media (max-width: 1200px) {
+
+    body{
+         display: block;
+    }
+
+    .secion_text_to_work{
+        width: 100%;
+    }
+
+    .main{
+        margin: 0% 4%;
+        width: 92%;
+    }
+
+    .header__image{
+        margin: 8% 0% 12% 4%;
+        width: 4%;
+    }
+
+    .section_texto_resultado{
+        margin-top: 8%;
+        margin-left: 4%;
+        margin-right: 4%;
+        width: 92%;
+        height: fit-content;
+    }
+
+    .section_texto_resultado__div_texto{
+        margin-left: 4.35%;
+        margin-right: 4.35%;
+        height: fit-content;
+    }
+
+    .texto_no_encontrado{
+        height: fit-content;
+    }
+
+    .section_texto_resultado__div_texto__descripcion{
+        field-sizing: content;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .main__div_botones{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .boton_encriptar{
+        width: 100%;
+    }
+
+    .boton_desencriptar{
+        width: 100%;
+    }
+
+}

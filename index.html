@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <body>
+
+        <!--
+        Sección de entrada:
+            - Logo de Alura
+            - Area en la que el usuario coloca el texto a encriptar/desencriptar
+            - Botones Encriptar y Desencriptar
+            - Indicación de como se debe colocar el texto a encriptar/desencriptar
+        -->
+        <section class="secion_text_to_work">
+
+            <header class="header">
+
+                <img src="./assets/alura_logo.png" id="imagen_logo_alura" alt="imagen_logo_alura" class="header__image">
+
+            </header>
+    
+            <main class="main">
+
+                <textarea class="main__text_area" id="textarea_texto_para_trabajar" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="main__div_indicacion">
+
+                    <img class="icono_circulo_alerta" src="./assets/circulo_alerta.png" alt="imagen_de_alerta">
+
+                    <p>Solo letras minúsculas y sin acentos</p>
+
+                </div>
+
+                <div class="main__div_botones">
+
+                    <button class="boton_encriptar" onclick="botonEncriptar()">Encriptar</button>
+
+                    <button class="boton_desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+
+                </div>
+    
+            </main>
+
+        </section>
+
+        <!--
+        Sección de salida:
+            - Imagen de "Texto no encontrado"
+            - Mensaje de que no se ha encontrado un texto apra encritpar/desencriptar
+
+            - Area en la que se muestra el texto resultado de la encriptación/desecriptación
+            - Boton Copiar
+        -->
+        <section class="section_texto_resultado" id="section_texto_resultado">
+
+            <div class="texto_no_encontrado" id="texto_no_encontrado">
+
+                <img class="section_texto_resultado__imagen" alt="imagen_texto_no_encontrado" src="./assets/persona_texto_a_procesar_no_encontrado.png" id="imagen_texto_no_encontrado">
+                
+                <div class="section_texto_resultado__div_texto" id="section_texto_resultado__div_texto">
+                
+                    <h1 class="section_texto_resultado__div_texto__titulo" id="titulo_texto_no_encontrado">Ningún mensaje fue encontrado</h1>
+
+                    <textarea class="section_texto_resultado__div_texto__descripcion" id="texto_texto_no_encontrado" contenteditable disabled>Ingresa el texto que desees encriptar o desencriptar.</textarea>
+
+                </div>
+
+            </div>
+
+            <button class="boton_copiar" id="boton_copiar" onclick="copiar()">Copiar</button>
+
+        </section>
+
+        <script src="app.js"></script>
+
+    </body>
+
+</head>
