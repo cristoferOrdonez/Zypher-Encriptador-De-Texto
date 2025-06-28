@@ -95,7 +95,7 @@ Disponible en GitHub Pages:
 ## 👤 Autor
 
 **Cristofer Ordóñez**  
-Desarrollador frontend — Integrante de Oracle One.  
+Proximamente desarrollador frontend — Aprendiz de Oracle One.  
 ✉️ cristodamian24@gmail.com
 
 ---
